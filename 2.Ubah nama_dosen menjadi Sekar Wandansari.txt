@@ -1,0 +1,13 @@
+> db.matkul.update(
+... {kode_matkul: "1234562"},
+... {$set:{nama_dosen: "Sekar Wandansari"}},
+... false, true
+... );
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.matkul.find();
+{ "_id" : ObjectId("5e020252b5e775263d62411a"), "matkul" : "Algoritma & Pemograman", "kode_matkul" : "1234567", "nama_dosen" : "Jamal Kosasih" }
+{ "_id" : ObjectId("5e020252b5e775263d62411b"), "matkul" : "Rekayasa Perangkat Lunak", "kode_matkul" : "1234568", "nama_dosen" : "Ivan Bagus" }
+{ "_id" : ObjectId("5e020252b5e775263d62411c"), "matkul" : "Sistem Basis Data", "kode_matkul" : "1234569", "nama_dosen" : "Aninda Nur Afika" }
+{ "_id" : ObjectId("5e020252b5e775263d62411d"), "matkul" : "Pengantar Ilmu Komputer", "kode_matkul" : "1234561", "nama_dosen" : "Nico Aresto" }
+{ "_id" : ObjectId("5e020252b5e775263d62411e"), "matkul" : "Bahasa Indonesia", "kode_matkul" : "1234562", "nama_dosen" : "Sekar Wandansari" }

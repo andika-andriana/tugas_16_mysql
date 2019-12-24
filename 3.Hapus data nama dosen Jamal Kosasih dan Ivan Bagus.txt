@@ -1,0 +1,13 @@
+> db.matkul.remove(
+... {nama_dosen: "Jamal Kosasih"}
+... );
+WriteResult({ "nRemoved" : 1 })
+
+> db.matkul.remove( {nama_dosen: "Ivan Bagus"} );
+WriteResult({ "nRemoved" : 1 })
+
+> db.matkul.find();
+{ "_id" : ObjectId("5e021100b5e775263d62412b"), "matkul" : "Sistem Basis Data", "kode_matkul" : "1234569", "nama_dosen" : "Aninda Nur Afika" }
+{ "_id" : ObjectId("5e021100b5e775263d62412c"), "matkul" : "Pengantar Ilmu Komputer", "kode_matkul" : "1234561", "nama_dosen" : "Nico Aresto" }
+{ "_id" : ObjectId("5e021100b5e775263d62412d"), "matkul" : "Bahasa Indonesia", "kode_matkul" : "1234562", "nama_dosen" : "Sekar Wandansari" }
+> 

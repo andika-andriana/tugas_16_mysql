@@ -1,0 +1,10 @@
+> db.dropDatabase();
+{ "dropped" : "matkul", "ok" : 1 }
+
+> db.matkul.find();
+
+> show databases;
+admin      0.000GB
+config     0.000GB
+local      0.000GB
+mahasiswa  0.000GB
